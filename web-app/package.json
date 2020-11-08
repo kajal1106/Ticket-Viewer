@@ -19,12 +19,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kajal1106/Ticket-Viewer.git"
+    "url": ""
   },
   "author": "Kajal Singh",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kajal1106/Ticket-Viewer/issues"
-  },
-  "homepage": "https://github.com/kajal1106/Ticket-Viewer#readme"
-}
+  }
