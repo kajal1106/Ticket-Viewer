@@ -1,2 +1,2 @@
 # Ticket-Viewer
-Zendesk Ticket Viewer Web Application
+Ticket Viewer Web Application
