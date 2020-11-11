@@ -14,11 +14,8 @@
         for(var i=0; i < ticket.tags.length; i++)
             strTags += "#" + ticket.tags[i] + " "
     %>
-
+ <div class="container">
       <div class="container-fluid">
-        <div class="App-header">
-             Ticket Viewer
-        </div> 
         <div class="offset-md-2 col-md-8">      
             <div class="row infoBox">          
                 <button class="button btn-primary navigation-button" id="btnBack"> Back </button>            
@@ -32,7 +29,12 @@
                 <div class="row infoBox"><div class="col-md-2 subjectName"> Tags:           </div> <div class="col-md-10"> <%= strTags %> </div> </div>                        
             </div>
         </div>
-
+        </div>
+        <div class="copyright">
+          &copy; by <a href="https://www.linkedin.com/in/kajal1106/" target="_blank" class="link">Kajal Singh.</a> Powered by
+          <a href="https://www.zendesk.com/" target="_blank" class="link">Zendesk</a>.
+      </div>
+</div>
       </div>
         <script>
             $("#btnBack").click(function(event){
