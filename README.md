@@ -1,7 +1,7 @@
 # Ticket-Viewer Web Application
 Ticket Viewer Web Application
 
-## Installation Instruction
+## 🚀 Installation Instructions
 
 1. Install NodeJs locally.
 2. Clone or download the repository.
@@ -25,14 +25,18 @@ Ticket Viewer Web Application
 
 ## Screenshots
 
-![Alt text](/images/IndexPage.png?raw=true "List View")
+![List View](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/IndexPage.png "List View")
 
-![Alt text](/images/DetailedView.png?raw=true "Single Ticket View")
+![Single Ticket View](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/DetailedView.png "Single Ticket View")
 
-![Alt text](/images/ErrorMessage.png?raw=true "Single Ticket View")
+![Error message](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/ErrorMessage.png "Error Message")
 
 
 
 ## Unit Tests
 
-![Alt text](/images/TestCases.png?raw=true "Unit Test")
+![Testing code](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/TestCases.png "Unit Test")
+
+## 🐾 Author
+
+[Kajal Singh](https://github.com/kajal1106)
