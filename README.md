@@ -24,11 +24,11 @@ Ticket Viewer Web Application
 ```
 ## 📢 Features
 
-> Displays a list of all tickets.
-> Pages through 25 tickets at a time
-> Displays individual tickets
-> Search By Id using search bar
-> Error Message
+* Displays a list of all tickets.
+* Pages through 25 tickets at a time
+* Displays individual tickets
+* Search By Id using search bar
+* Error Message
 
 
 ## 📷 Screenshots
