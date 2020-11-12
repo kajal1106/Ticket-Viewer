@@ -6,7 +6,8 @@ function singleTicket(req, res) {
 
     var config = {
         auth: {
-            username: process.env.USERNAME,
+            // username: process.env.USERNAME,
+            username: "singh.kajal940@gmail.com",
             password: process.env.PASSWORD
         }
     };
@@ -20,16 +21,22 @@ function singleTicket(req, res) {
                 }
                 // render or error
                 else {
-                    res.status(404).send('404 Page Not Found');
+                    res.status(404).send(
+                        `'<link rel=\'stylesheet\' href=\'/css/style.css\'/>
+                        <h1 class="error-heading">
+                         404 Page Not Found
+                        </h1> '`
+                        );
                 }
             });
-
-
-
         })
         .catch(function (error) {
-            res.status(404).send('400 invalid ticket id requested or API not available');
+            res.status(404).send(
+                `'<link rel=\'stylesheet\' href=\'/css/style.css\' >
+                <h1 class="error-heading">
+                    400 invalid ticket id requested or API not available
+                </h1>'`
+                );
         });
 }
-
 exports.singleTicket = singleTicket;

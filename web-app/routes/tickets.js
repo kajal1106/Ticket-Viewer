@@ -12,7 +12,7 @@ function tickets(req, res) {
     var config = {
         auth: {
             // username: process.env.USERNAME,
-            username:"singh.kajal940@gmail.com",
+            username: "singh.kajal940@gmail.com",
             password: process.env.PASSWORD
         }
     };
@@ -33,34 +33,20 @@ function tickets(req, res) {
                 // render or error
                 else {
                     res.status(404).send(
-
-                    `'<link rel=\'stylesheet\' href=\'/css/style.css\' /><div class="container">
-                        <div class="container-fluid">
-                       
-                            404 Page Not Found
-                      
-                      <div class="copyright">
-                      &copy; by <a href="https://www.linkedin.com/in/kajal1106/" target="_blank" class="link">Kajal Singh.</a> Powered
-                      by
-                      <a href="https://www.zendesk.com/" target="_blank" class="link">Zendesk</a>.
-                    </div>
-                      </div>'`)
-                    };
+                        `'<link rel=\'stylesheet\' href=\'/css/style.css\'/>
+                            <h1 class="error-heading">
+                             404 Page Not Found
+                            </h1> '`);
+                    }
             });
 
         })
         .catch(function (error) {
             res.status(404).send(
-            `'<link rel=\'stylesheet\' href=\'/css/style.css\' /><div class="container">
-            
-            400 invalid page requested or API not available
-
-          <div class="copyright">
-          &copy; by <a href="https://www.linkedin.com/in/kajal1106/" target="_blank" class="link">Kajal Singh.</a> Powered
-          by
-          <a href="https://www.zendesk.com/" target="_blank" class="link">Zendesk</a>.
-        </div>
-          </div>'`
+                `'<link rel=\'stylesheet\' href=\'/css/style.css\' >
+                <h1 class="error-heading">
+                    400 invalid page requested or API not available
+                </h1>'`
             );
         });
 }
