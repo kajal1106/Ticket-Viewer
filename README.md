@@ -23,11 +23,13 @@ Ticket Viewer Web Application
     http://localhost:3000
 ```
 ## 📢 Features
-° Displays a list of all tickets
-° Pages through 25 tickets at a time
-° Displays individual tickets
-° Search By Id using search bar
-° Error Handling
+
+> Displays a list of all tickets.
+> Pages through 25 tickets at a time
+> Displays individual tickets
+> Search By Id using search bar
+> Error Message
+
 
 ## 📷 Screenshots
 
