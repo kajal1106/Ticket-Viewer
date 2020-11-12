@@ -22,8 +22,14 @@ Ticket Viewer Web Application
 ```javascript
     http://localhost:3000
 ```
+## 📢 Features
+° Displays a list of all tickets
+° Pages through 25 tickets at a time
+° Displays individual tickets
+° Search By Id using search bar
+° Error Handling
 
-## Screenshots
+## 📷 Screenshots
 
 ![List View](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/IndexPage.png "List View")
 
@@ -32,8 +38,7 @@ Ticket Viewer Web Application
 ![Error message](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/ErrorMessage.png "Error Message")
 
 
-
-## Unit Tests
+## 🔧 Unit Tests
 
 ![Testing code](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/TestCases.png "Unit Test")
 
