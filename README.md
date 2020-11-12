@@ -43,7 +43,7 @@ An interactive browser application that connects to the Zendesk [API](https://ww
 
 ## 🔧 Unit Tests
 
-![Testing code](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/TestCases.png "Unit Test")
+![Testing code](https://github.com/kajal1106/Ticket-Viewer/blob/master/web-app/public/img/TestCases.jpg "Unit Test")
 
 ## 🐾 Author
 
