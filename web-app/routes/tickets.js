@@ -1,5 +1,7 @@
 var axios = require('axios');
 var ejs = require('ejs');
+// import indexStyle from '/css/style.css';
+
 
 
 function tickets(req, res) {
@@ -9,7 +11,8 @@ function tickets(req, res) {
 
     var config = {
         auth: {
-            username: process.env.USERNAME,
+            // username: process.env.USERNAME,
+            username:"singh.kajal940@gmail.com",
             password: process.env.PASSWORD
         }
     };
@@ -29,13 +32,36 @@ function tickets(req, res) {
                 }
                 // render or error
                 else {
-                    res.status(404).send('404 Page Not Found');
-                }
+                    res.status(404).send(
+
+                    `'<link rel=\'stylesheet\' href=\'/css/style.css\' /><div class="container">
+                        <div class="container-fluid">
+                       
+                            404 Page Not Found
+                      
+                      <div class="copyright">
+                      &copy; by <a href="https://www.linkedin.com/in/kajal1106/" target="_blank" class="link">Kajal Singh.</a> Powered
+                      by
+                      <a href="https://www.zendesk.com/" target="_blank" class="link">Zendesk</a>.
+                    </div>
+                      </div>'`)
+                    };
             });
 
         })
         .catch(function (error) {
-            res.status(404).send('400 invalid page requested or API not available');
+            res.status(404).send(
+            `'<link rel=\'stylesheet\' href=\'/css/style.css\' /><div class="container">
+            
+            400 invalid page requested or API not available
+
+          <div class="copyright">
+          &copy; by <a href="https://www.linkedin.com/in/kajal1106/" target="_blank" class="link">Kajal Singh.</a> Powered
+          by
+          <a href="https://www.zendesk.com/" target="_blank" class="link">Zendesk</a>.
+        </div>
+          </div>'`
+            );
         });
 }
 
