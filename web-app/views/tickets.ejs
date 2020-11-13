@@ -13,10 +13,12 @@
 
 <body>
 
-
     <div class="container">
+        <!-- HEADER -->
         <header class="header">
             <img src="img/zendesk.gif" alt="Logo" class="header__logo">
+
+            <!-- Search By Id-->
             <form class="search">
                 <input type="text" class="search__field" placeholder="Search Ticket By ID...">
                 <a class="btn search_icon">
@@ -48,7 +50,7 @@
                     </div>
                 </div>
 
-                <!-- Create row for each ticket avaialbe in tickets array. -->
+                <!-- Creating row for each ticket avaialbe in tickets array received from the response of tickets.js -->
                 <% 
                 tickets.forEach(function(ticket) 
                 { 
@@ -58,6 +60,8 @@
                     for(var i=0; i < ticket.tags.length; i++)
                         tags += "#" + ticket.tags[i] + " ";
             %>
+
+                // <!-- For every loop generating a row with the essential details -->
                 <div class="ticketInfo row">
                     <div class="col-md-10">
                         <div><span class="subjectName"> Ticket Id: </span> <%= ticket.id %> </div>

@@ -1,23 +1,20 @@
 var axios = require('axios');
 var ejs = require('ejs');
-// import indexStyle from '/css/style.css';
 
 function tickets(req, res) {
 
   if (req.params.pageNo === undefined) 
     req.params.pageNo = 1;
-  
+    
+  /* Setting Authorization to send along with the http request*/
   var config = {
     auth: {
-      // username: process.env.USERNAME,
       username: "singh.kajal940@gmail.com",
       password: process.env.PASSWORD
     }
   };
-  // console.log("ok"+config.auth.username); console.log('https://' +
-  // process.env.SUBDOMAIN +
-  // '.zendesk.com/api/v2/tickets.json?page='+req.params.pageNo+'&per_page=25',conf
-  // ig);
+ 
+  /* Sending http get request using axios */
   axios
     .get('https://' + process.env.SUBDOMAIN + '.zendesk.com/api/v2/tickets.json?page=' + req.params.pageNo + '&per_page=25', config)
     .then(function (response) {
@@ -31,12 +28,16 @@ function tickets(req, res) {
         ? ""
         : "disabled");
 
+        /* Using the response form get Request and rendering it into the ticket.ejs page  */
+
       ejs.renderFile('./views/tickets.ejs', response.data, function (err, result) {
         if (!err) {
           res
             .status(200)
-            .send(result// render or error
+            .send(result       // render or error
             );
+
+            /* If File not found throwing error 404 */ 
         } else {
           res
             .status(404)
