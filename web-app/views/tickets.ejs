@@ -49,7 +49,6 @@
                         <button class="button btn-primary navigation-button" id="btnNext" <%= bNext %>> Next </button>
                     </div>
                 </div>
-
                 <!-- Creating row for each ticket avaialbe in tickets array received from the response of tickets.js -->
                 <% 
                 tickets.forEach(function(ticket) 
@@ -60,7 +59,6 @@
                     for(var i=0; i < ticket.tags.length; i++)
                         tags += "#" + ticket.tags[i] + " ";
             %>
-
                 <!-- For every loop generating a row with the essential details -->
                 <div class="ticketInfo row">
                     <div class="col-md-10">
