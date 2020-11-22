@@ -1,5 +1,5 @@
 # Ticket-Viewer Application using NodeJS
->An interactive browser application that connects to the Zendesk [API](https://www.zendesk.com/) and displays ticket information from a Zendesk account.
+An interactive browser application that connects to the Zendesk [API](https://www.zendesk.com/) and displays ticket information from a Zendesk account.
 
 ## 🚀 Installation Instructions
 
