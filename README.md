@@ -47,4 +47,4 @@ An interactive browser application that connects to the Zendesk [API](https://ww
 
 ## 🐾 Author
 
-[Kajal Singh](https://github.com/kajal1106)
+[Kajal Singh](https://www.linkedin.com/in/kajal1106/)
